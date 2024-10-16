@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
-    this.checkTokenOnLoad(); 
+    // this.checkTokenOnLoad(); 
   }
   checkTokenOnLoad(): void {
     const token = this.authService.getToken();

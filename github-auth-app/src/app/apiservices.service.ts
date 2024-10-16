@@ -9,7 +9,7 @@ export class ApiservicesService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
-  private apiUrl = 'http://localhost:8080/'
+  private apiUrl = 'http://localhost:8081/'
 
   getApi1(){
     return this.http.get<any>(this.apiUrl+'api1')
